@@ -4,6 +4,8 @@ import ServiceCard from "@/components/ServiceCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Palette, Settings, Server, Globe, Wrench, Zap } from "lucide-react";
 import { Mail, Phone } from "lucide-react";
+import ContactForm from "@/components/ContactSection";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   const services = [
@@ -96,30 +98,30 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4">
+   <section id="contact" className="py-20 px-4">
         <div className="container mx-auto max-w-2xl text-center">
-          <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
+         <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
           <div className="space-y-4">
-            <div className="flex items-center justify-center gap-3 text-lg">
-              <Mail className="h-5 w-5 text-primary" />
-              <a href="mailto:contact@spiderwebs.com" className="hover:text-primary transition-colors">
-                contact@spiderwebs.com
+          <div className="flex items-center justify-center gap-3 text-lg">
+             <a href="mailto:spiderwebsconnect@gmail.com" className="hover:text-primary transition-colors">
+               spiderwebsconnect@gmail.com
               </a>
             </div>
             <div className="flex items-center justify-center gap-3 text-lg">
               <Phone className="h-5 w-5 text-primary" />
-              <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                +1 (234) 567-890
+              <a href="tel:+917564096954" className="hover:text-primary transition-colors">
+                +917564096954
               </a>
             </div>
           </div>
         </div>
       </section>
+{/*       <ContactSection /> */}
 
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-8">
         <div className="container mx-auto text-center">
-          <p>&copy; 2024 SpiderWebs. All rights reserved.</p>
+          <p>&copy; 2025 SpiderWebs. All rights reserved.</p>
         </div>
       </footer>
 

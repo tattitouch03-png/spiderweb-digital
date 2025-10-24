@@ -86,6 +86,14 @@ const MaintenanceBackup = () => {
             </p>
           </div>
         </div>
+         <Button
+          variant="ghost"
+          onClick={() => navigate("/")}
+          className="mb-6"
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Home
+        </Button>
       </div>
       <WhatsAppButton />
     </div>

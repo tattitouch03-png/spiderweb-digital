@@ -66,31 +66,35 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Logo - Center */}
+        {/* Logo - Center (responsive size) */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <h1 className="text-2xl font-bold text-primary">SpiderWebs</h1>
+          <h1 className="font-bold text-primary text-[clamp(14px,6vw,28px)] md:text-[clamp(18px,4vw,32px)]">
+            SpiderWebs
+          </h1>
         </div>
 
         {/* Social Media - Right Side */}
-        <div className="flex items-center gap-2">
-          {socialLinks.map((social) => (
-            <Button
-              key={social.label}
-              variant="ghost"
-              size="icon"
-              asChild
-              className="hover:text-primary"
-            >
-              <a
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.label}
+        <div className="hidden md:flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2 md:gap-3">
+            {socialLinks.map((social) => (
+              <Button
+                key={social.label}
+                variant="ghost"
+                size="icon"
+                asChild
+                className="hover:text-primary"
               >
-                <social.icon className="h-5 w-5" />
-              </a>
-            </Button>
-          ))}
+                <a
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                >
+                  <social.icon className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                </a>
+              </Button>
+            ))}
+          </div>
         </div>
       </div>
     </header>

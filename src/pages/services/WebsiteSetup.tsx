@@ -44,17 +44,17 @@ const WebsiteSetup = () => {
               <li>Domain registration and DNS configuration</li>
               <li>Web hosting setup and server configuration</li>
               <li>SSL certificate installation for secure connections</li>
-              <li>Content Management System (CMS) installation</li>
+          
               <li>Email accounts setup and configuration</li>
               <li>Website analytics and tracking implementation</li>
-              <li>SEO foundation setup</li>
+             
               <li>Security plugins and firewalls installation</li>
             </ul>
 
             <h3 className="text-xl font-semibold mb-3">Technical Configuration:</h3>
             <ul className="list-disc pl-6 space-y-2 mb-6">
               <li><strong>Server Optimization:</strong> Fine-tuning server settings for maximum performance</li>
-              <li><strong>Database Setup:</strong> Proper database configuration and optimization</li>
+             
               <li><strong>Caching Configuration:</strong> Implementing caching strategies for faster load times</li>
               <li><strong>CDN Integration:</strong> Setting up Content Delivery Networks for global reach</li>
               <li><strong>Backup Systems:</strong> Automated backup solutions for data protection</li>
@@ -78,6 +78,14 @@ const WebsiteSetup = () => {
             </div>
           </div>
         </div>
+         <Button
+          variant="ghost"
+          onClick={() => navigate("/")}
+          className="mb-6"
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Home
+        </Button>
       </div>
       <WhatsAppButton />
     </div>

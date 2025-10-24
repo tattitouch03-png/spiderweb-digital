@@ -54,7 +54,7 @@ const FreeDomain = () => {
             <h3 className="text-xl font-semibold mb-3">Choosing Your Domain Name:</h3>
             <ul className="list-disc pl-6 space-y-2 mb-6">
               <li><strong>Brand Identity:</strong> We help you select a name that reflects your business</li>
-              <li><strong>SEO Considerations:</strong> Optimize your domain for search engines</li>
+            
               <li><strong>Availability Check:</strong> Verify domain availability across extensions</li>
               <li><strong>Trademark Research:</strong> Ensure your chosen name is legally safe to use</li>
               <li><strong>Alternative Suggestions:</strong> Multiple options if your first choice is taken</li>
@@ -85,6 +85,14 @@ const FreeDomain = () => {
             </p>
           </div>
         </div>
+         <Button
+          variant="ghost"
+          onClick={() => navigate("/")}
+          className="mb-6"
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Home
+        </Button>
       </div>
       <WhatsAppButton />
     </div>
