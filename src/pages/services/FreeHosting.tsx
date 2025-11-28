@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import serviceImage from "@/assets/service-hosting.jpg";
-
+import CallButton from "@/components/CallButton";
 const FreeHosting = () => {
   const navigate = useNavigate();
 
@@ -12,14 +12,7 @@ const FreeHosting = () => {
     <div className="min-h-screen">
       <Header />
       <div className="container mx-auto px-4 py-12">
-        <Button
-          variant="ghost"
-          onClick={() => navigate("/")}
-          className="mb-6"
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
-        </Button>
+      
 
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Free Hosting (Best in Industry)</h1>
@@ -95,6 +88,7 @@ const FreeHosting = () => {
         </Button>
       </div>
       <WhatsAppButton />
+    <CallButton phone="+917564096954" />
     </div>
   );
 };

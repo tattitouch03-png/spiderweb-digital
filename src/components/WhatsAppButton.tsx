@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center space-x-3"
+      className="fixed bottom-20 right-6 z-50 flex items-center space-x-3"
       aria-label="Contact on WhatsApp"
     >
       {/* Tooltip / Text */}

@@ -2,10 +2,10 @@ import Header from "@/components/Header";
 import HeroSlider from "@/components/HeroSlider";
 import ServiceCard from "@/components/ServiceCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CallButton from "@/components/CallButton";
 import { Palette, Settings, Server, Globe, Wrench, Zap } from "lucide-react";
 import { Mail, Phone } from "lucide-react";
-import ContactForm from "@/components/ContactSection";
-import ContactSection from "@/components/ContactSection";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   const services = [
@@ -77,20 +77,20 @@ const Index = () => {
           </div>
           <div className="prose prose-lg mx-auto">
             <p className="text-center text-lg mb-6">
-              SpiderWebs is a leading web development company dedicated to creating 
-              exceptional digital experiences. With years of expertise in modern web 
-              technologies, we specialize in building responsive, fast, and scalable 
+              SpiderWebs is a leading web development company dedicated to creating
+              exceptional digital experiences. With years of expertise in modern web
+              technologies, we specialize in building responsive, fast, and scalable
               websites that help businesses thrive in the digital age.
             </p>
             <p className="text-center text-lg mb-6">
-              Our team of experienced developers and designers work closely with clients 
-              to understand their unique needs and deliver customized solutions that exceed 
-              expectations. From small business websites to complex web applications, we 
+              Our team of experienced developers and designers work closely with clients
+              to understand their unique needs and deliver customized solutions that exceed
+              expectations. From small business websites to complex web applications, we
               have the expertise to bring your vision to life.
             </p>
             <p className="text-center text-lg">
-              We pride ourselves on our commitment to quality, attention to detail, and 
-              exceptional customer service. Let us help you build a strong online presence 
+              We pride ourselves on our commitment to quality, attention to detail, and
+              exceptional customer service. Let us help you build a strong online presence
               that drives results.
             </p>
           </div>
@@ -98,13 +98,13 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-   <section id="contact" className="py-20 px-4">
+      <section id="contact" className="py-20 px-4">
         <div className="container mx-auto max-w-2xl text-center">
-         <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
+          <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
           <div className="space-y-4">
-          <div className="flex items-center justify-center gap-3 text-lg">
-             <a href="mailto:spiderwebsconnect@gmail.com" className="hover:text-primary transition-colors">
-               spiderwebsconnect@gmail.com
+            <div className="flex items-center justify-center gap-3 text-lg">
+              <a href="mailto:spiderwebsconnect@gmail.com" className="hover:text-primary transition-colors">
+                spiderwebsconnect@gmail.com
               </a>
             </div>
             <div className="flex items-center justify-center gap-3 text-lg">
@@ -114,9 +114,11 @@ const Index = () => {
               </a>
             </div>
           </div>
+          <div className="mt-12 text-left">
+            <ContactForm />
+          </div>
         </div>
       </section>
-{/*       <ContactSection /> */}
 
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-8">
@@ -126,6 +128,7 @@ const Index = () => {
       </footer>
 
       <WhatsAppButton />
+      <CallButton phone="+917564096954" />
     </div>
   );
 };
