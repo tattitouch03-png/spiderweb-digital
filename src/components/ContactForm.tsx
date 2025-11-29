@@ -78,12 +78,18 @@ const ContactForm = () => {
         if (validate()) {
             setIsLoading(true);
             try {
-                const response = await fetch('http://localhost:5000/api/contact', {
+                // 1. Define the Base URL logic
+                const baseUrl = window.location.hostname === 'localhost'
+                    ? 'http://localhost:5000'
+                    : 'https://spiderweb-digital.onrender.com'; // <--- PASTE YOUR RENDER URL HERE
+
+                // 2. Use backticks (`) to insert the variable
+                const response = await fetch(`${baseUrl}/api/contact`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(formData),
+                    body: JSON.stringify(formData), // or whatever data you are sending
                 });
 
                 const data = await response.json();
